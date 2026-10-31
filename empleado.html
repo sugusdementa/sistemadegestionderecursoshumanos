@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sistema de Gestion de Recursos Humanos</title>
+</head>
+<body>
+    <!-- Formulario de Alta de empleado-->
+    <h1>Empleados:Alta/Edicion</h1>
+            <form method="post" action="">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="legajo">Legajo:</label>
+                        <input type="text" id="legajo" name="legajo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected hidden>Seleccione una opción...</option>
+                            <option value="activo">Senior</option>
+                            <option value="activo">SemiSenior</option>
+                            <option value="activo">Junior</option>
+                            <option value="activo">Trainee/Pasante</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="number" id="dni" name="dni" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sbase">Salario Base:</label>
+                        <input type="number" id="sbase" name="sbase" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-ingreso">Fecha de Ingreso:</label>
+                        <input type="date" id="fecha-ingreso" name="fecha_ingreso" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Sector:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected hidden>Seleccione una opción...</option>
+                            <option value="activo">Administracion</option>
+                            <option value="activo">Ventas</option>
+                            <option value="activo">Sistemas</option>
+                            <option value="activo">Recursos Humanos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>                     
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected hidden>Seleccione una opción...</option>
+                            <option value="activo">Activo</option>
+                            <option value="inactivo">Inactivo</option>
+                        </select>
+                    </div>                        
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                        <!-- contenedor de Botones-->
+                        <div class="form-actions">
+                            <!-- Botón de guardar añadido -->
+                            <button type="submit" id="btn-guardar" name="btn_guardar"           style="background-color: #28a745; color: white; padding: 10px       20px; border: none; border-radius: 4px; cursor:                       pointer;">Guardar</button>
+
+                            <!-- Botón de limpiar añadido -->
+
+                            <button type="reset" id="btn-limpiar" name="btn_limpiar"            style="background-color: #007bff; color: white;   padding:          10px 20px; border: none; border-radius: 4px; cursor:                pointer;">Limpiar</button>
+
+                            <!-- Boton de cancelar añadido-->
+                            <button type="button" id="btn-cancelar" name="btn_cancelar"         style="background-color: #6c757d; color: white;  padding: 10px      20px; border: none; border-radius: 4px; cursor:                         pointer;">Cancelar</  button>
+                        </div>
+
+                </div>
+            </form>
+
+</body>
+</html>
